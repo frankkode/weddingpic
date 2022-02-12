@@ -117,7 +117,7 @@ export default function Home({ imageSrc: defaultImageSrc, uploadData: defaultUpl
                   <motion.div className={styles.imageImage} initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1 }}>
-                    <Image height="500" width="500" src={image.image} alt="" />
+                    <Image height="500" width="500" src={image.image} alt="image" />
                   </motion.div>
                 </a>
               </motion.li>
@@ -127,7 +127,7 @@ export default function Home({ imageSrc: defaultImageSrc, uploadData: defaultUpl
         </motion.ul>
         {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}></Modal>}
         <p>
-          <Button onClick={handleOnLoadMore}>Load More Results...</Button>
+          <Button onClick={handleOnLoadMore}>Load More Images...</Button>
         </p>
       </Container>
     </Layout>
