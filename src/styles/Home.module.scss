@@ -1,0 +1,68 @@
+@import "@styles/settings/__settings";
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
+
+
+.header {
+  font-size: 1em;
+  font-family: 'The Nautigal', cursive;
+}
+
+
+.images {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2em;
+}
+
+.imageTitle {
+  font-size: 1.4em;
+  margin: .4em 0 0;
+}
+
+.imageImage {
+
+  & > div {
+    display: block!important;
+  }
+
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  max-width: 90rem;
+  min-height: 10vh;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+
+.form {
+
+  [type="file"] {
+    font-size: 1em;
+    padding: 1em;
+    border: solid 1px gray;
+    border-radius: .5em;
+  }
+}
+
+

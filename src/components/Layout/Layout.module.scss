@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 0.5em 0;
+  font-family: 'The Nautigal', cursive;
+}

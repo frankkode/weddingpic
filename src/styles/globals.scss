@@ -1,0 +1,104 @@
+@import "@styles/settings/__settings";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 30%;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* modal styles */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.backdrop img{
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+.imgwrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /* padding controls height, will always be perfectly square regardless of width */
+  position: relative;
+  opacity: 0.8;
+}
+.imgwrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+img:hover {
+  cursor: pointer;
+}
+
+/* pwa notification*/
+
+
+.offline-notification_explanation {
+  display: none;
+  background: inherit;
+  padding-top: 1em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.offline-msg {
+  display: none;
+}
+
+.offline {
+  .offline-notification {
+    transition: transform 0.3s;
+    transform: translateY(0) translateX(-50%);
+  }
+  
+  .online-msg {
+    display: none;
+  }
+  
+  .offline-msg {
+    display: block;
+  }
+}

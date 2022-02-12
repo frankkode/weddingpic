@@ -1,0 +1,32 @@
+@import "@styles/settings/__settings";
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
+.header {
+
+  width: 100%;
+  font-size: 1.2em;
+  background-color: $color-header-background;
+  color: #e8eca5;
+  padding: 1em 0;
+  font-family: 'The Nautigal', cursive;
+  
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTitle {
+  flex-grow: 1;
+  font-size: 1.3em;
+  font-weight: $font-weight-black;
+  justify-content: center;
+  align-items: center;
+}
