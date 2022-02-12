@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
+import Script from 'next/script'
 
 import Layout from '@components/Layout';
 import Container from '@components/Container';
@@ -84,6 +85,7 @@ export default function Home({ imageSrc: defaultImageSrc, uploadData: defaultUpl
             <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
             <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
             <link rel="manifest" href="/manifest.json" />
+            <script src="/cloudinaryServiceWorkerSetup.js"></script>
 
           </Head>
 
