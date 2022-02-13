@@ -1,9 +1,5 @@
-# Demo Image List Starter
+# Wedding images
 
 ## ⚡️ Quick Start
 
-```bash
-yarn create next-app -e https://github.com/colbyfayock/demo-image-list-starter
-# or
-npx create-next-app -e https://github.com/colbyfayock/demo-image-list-starter
-```
+

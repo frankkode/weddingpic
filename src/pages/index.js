@@ -74,7 +74,7 @@ export default function Home({ imageSrc: defaultImageSrc, uploadData: defaultUpl
   return (
     <Layout>
       <Container>
-        <h1 className="sr-only">My Images</h1>
+        <h1 className="sr-only">wedding Images</h1>
 
         <div className={styles.container}>
           <Head>
