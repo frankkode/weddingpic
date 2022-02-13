@@ -34,7 +34,7 @@ export default function Home({ imageSrc: defaultImageSrc, uploadData: defaultUpl
       formData.append('file', file);
     }
 
-    formData.append('upload_preset', 'weddingupload');
+    formData.append('upload_preset', 'weddingimg');
 
     const data = await fetch('https://api.cloudinary.com/v1_1/dw8s775hb/image/upload', {
       method: 'POST',
